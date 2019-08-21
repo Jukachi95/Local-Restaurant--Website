@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans';
+  scrol-behaviour: smooth;
+}
+
+
+
+/* Utility Class */
+.container{
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.s-text{
+  font-size: 0.8rem;
+}
+
+.m-text{
+  font-size: 2.5rem;
+   animation-name: moveFromBottom;
+  animation-duration: 2s;
+  display: block;
+}
+
+.l-text{
+  font-size: 4rem;
+ animation-name: moveFromTop;
+  animation-duration: 2s;
+  display: block;
+}
+
+
+
+.mg-b{
+  margin-bottom: 1rem;
+}
+
+.btn{
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #000;
+  text-align: center;
+  color: white;
+  border-radius: 20%;
+  display: inline-block;
+}
+
+.btn:hover{
+  background-color:#111;
+  transition: all 1s;
+}
+
+.btn-submit{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  display:inline-block;
+  margin-top: 1rem;
+ display: flex;
+  justify-content: center;
+  text-decoration:none;
+}
+
+/* Navbar */
+.navbar{
+  background-color: #000;
+  color:#f4f4f4;
+  display: flex;
+justify-content: space-between;
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
+
+.navbar h2{
+   padding:1.7rem;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar ul li a{
+  padding: 1.7rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  
+}
+
+.navbar ul li a:hover{
+  background-color: #fff;
+  color: #000;
+transition: all 0.9s;
+
+}
+
+
+#showcase{
+  background: url('https://images.unsplash.com/photo-1526230427044-d092040d48dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  
+/*  overlay  */
+
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Menu  */
+
+.menu-title{
+  text-align: center;
+  margin:1.8rem;
+}
+
+.menu-btn{
+  margin: 0.9rem;
+  text-decoration: none;
+  background-color: #000000;
+  padding: 0.7rem;
+  display: inline-block;
+  border-radius: 10.5%;
+  color: #f4f4f4;
+}
+
+.menu-btn:hover{
+  background-color: #333333;
+}
+
+#menu{
+/*   display: flex; */
+}
+
+#menu h1{
+  text-align: center;
+}
+
+#menu .kids-meal{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+
+
+#menu .kids-meal .kids-meal-boxes{
+  border: 3px solid black;
+  height: 200px;
+  width: 200px;
+ display: inline-block;
+  margin: 0.3rem;
+  text-align: center;
+  background-color: #8895FF;
+}
+
+#menu .kids-meal .kids-meal-boxes h2{
+  margin-bottom: 0.5rem;
+}
+
+
+#menu .popular-meal{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+
+#menu .popular-meal .popular-meal-boxes{
+  border: 3px solid black;
+  height: 200px;
+  width: 200px;
+ display: inline-block;
+  margin: 0.3rem;
+  text-align: center;
+  background-color: #FF3E30;
+}
+
+
+#menu .vegetarian{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+#menu .vegetarian .vegetarain-meal-boxes{
+ background-color: #49B261;
+  border: 3px solid black;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  margin: 0.3rem;
+}
+
+
+/* Order */
+.mainOrder{
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.form-group{
+  display: block;
+}
+
+.form-group label{
+  display: block;
+  margin: 5px;
+}
+
+.form-group input,
+.form-group textarea{
+  width: 100%;
+  padding: 5px;
+}
+
+.form-group textarea{
+  height: 200px;
+}
+
+.form-icons{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-icons div{
+  text-align: center;
+  padding: 2px;
+}
+
+.form-icons div i{
+  margin-bottom: 1rem;
+  
+}
+
+
+/* Map - Location */
+
+.location-img{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 0.7rem;
+  padding: 1rem;
+ grid-template-areas:
+    "ia ia ia ia . . ib ib ib ib"
+    ". . . ic ic ic ic . . .";
+}
+
+.location-img-text{
+  background-color: black;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.location-img-text p{
+  animation-name: moveFromLeft;
+  animation-duration: 2s;
+}
+
+.img-1{
+  grid-area: ia;
+  
+}
+
+.img-2{
+  grid-area: ib;
+ 
+}
+
+.img-3{
+  grid-area: ic;
+  
+}
+
+.location-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#map-showcase{
+  background: url('/img/jollylocation3.png');
+  height: 70vh;
+  background-size: cover;
+  background-position: bottom right;
+  max-width: 1100px;
+  display: block;
+  margin: auto;
+/*   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1); */
+  margin-top: 2rem;
+}
+
+.location-help{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.location-box{
+  background-color: #000;
+  color: #f4f4f4;
+  width: 30.3%;
+  border-radius: 3%;
+  text-align: center;
+  padding: 15px;
+}
+
+.location-box h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+@keyframes moveFromTop{
+  
+  0%{
+    opacity:0;
+    transform: translateY(-100px);
+  }
+  
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+  
+  
+}
+
+
+@keyframes moveFromLeft{
+  
+  
+  0%{
+    opaicty:0;
+    transform: translateX(-90px);
+  }
+  
+    100%{
+    opaicty:0;
+    transform: translate(0);
+  }
+  
+}
+
+
+@keyframes moveFromBottom{
+  
+  0%{
+    opacity:0;
+    transform: translateY(100px);
+  }
+  
+  100%{
+    opacity:1
+    transform: translate(0);
+  }
+  
+  
+}
+
+
+
+#footer{
+  padding: 1rem 0.5rem;
+  text-align: center;
+  background-color: #000;
+  color: #f4f4f4;
+}
+
+
+
+
+@media(max-width: 768px){
+ 
+  
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .navbar ul{
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  
+   .location-img{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  padding: 1rem;
+ grid-template-areas:
+    "ia ia ia ia ia ia ia ia ia ia"
+   "ib ib ib ib ib ib ib ib ib ib"
+    "ic ic ic ic ic ic ic ic ic ic";
+}
+  
+  
+}
+
+
+
+@media(max-width:790px){
+  
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .navbar ul{
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  
+   .navbar ul li a{
+    
+    padding: 0.1rem;
+  }
+  
+   .location-img{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  padding: 1rem;
+ grid-template-areas:
+    "ia ia ia ia ia ia ia ia ia ia"
+   "ib ib ib ib ib ib ib ib ib ib"
+    "ic ic ic ic ic ic ic ic ic ic";
+}
+  
+}
+
+
+
+
+@media(min-width:791px) and (max-width:1170px){
+  
+  .navbar ul{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    
+  }
+  
+  .navbar ul li a{
+    display: flex;
+    justify-content: center;
+
+  }
+  
+
+  
+  .location-img{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  padding: 1rem;
+ grid-template-areas:
+    "ia ia ia ia ia ia ia ia ia ia"
+   "ib ib ib ib ib ib ib ib ib ib"
+    "ic ic ic ic ic ic ic ic ic ic";
+}
+  
+  
+  
+}
+
